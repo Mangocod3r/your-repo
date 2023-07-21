@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Waitlist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #emailInput {
+            padding: 10px;
+            width: 300px;
+        }
+
+        #submitButton {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Join Our Waitlist!</h1>
+    <p>Be the first to know when we launch.</p>
+    <form action="/subscribe" method="POST">
+        <input type="email" id="emailInput" name="email" placeholder="Enter your email address" required>
+        <br>
+        <button type="submit" id="submitButton">Join Waitlist</button>
+    </form>
+</body>
+
+</html>
